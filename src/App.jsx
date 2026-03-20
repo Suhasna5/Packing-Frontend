@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const localApiUrl = "http://localhost:5002/api/packing";
-const deployedApiUrl = "";
+const deployedApiUrl = "https://packing-frontend-evcwerb7fmeufcge.eastasia-01.azurewebsites.net/api/packing";
 
 const resolvedApiUrl =
   import.meta.env.VITE_API_URL ?? (import.meta.env.DEV ? localApiUrl : deployedApiUrl);
